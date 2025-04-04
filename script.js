@@ -1,13 +1,9 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
-    // ==================== Initialize AOS ====================
     AOS.init({
       duration: 800,
       once: true,
     });
   
-    // ==================== Theme Toggle (Light/Dark) ====================
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     const themeIcon = themeToggle?.querySelector('i');
@@ -43,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    // ==================== Language Toggle (Arabic/English) ====================
     const langToggle = document.getElementById('lang-toggle');
     const htmlTag = document.documentElement;
     const bootstrapCssLink = document.getElementById('bootstrap-css');
@@ -121,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
       setLanguage(targetLang);
     });
   
-    // ==================== Star Rating System ====================
     const starRatingContainer = document.querySelector('.star-rating');
     const stars = starRatingContainer?.querySelectorAll('i');
     const ratingInput = document.getElementById('rating-value');
@@ -159,7 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    // ==================== Contact Form Handling ====================
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
   
@@ -195,9 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    // ==================== Typewriter Effect ====================
     const typewriterElement = document.getElementById('typewriter');
-    const typewriterText = "طالب علوم | مطور ويب | فويس أوفر"; // النص الذي سيظهر بتأثير الكتابة
+    const typewriterText = "طالب علوم | مطور ويب | فويس أوفر";
     let charIndex = 0;
   
     function typeWriter() {
@@ -207,11 +199,8 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeWriter, 100);
       }
     }
-    // بدء تأثير الكتابة بعد تحميل الصفحة
     typeWriter();
   
-    // ==================== GSAP Entrance Animations ====================
     gsap.from(".hero-section h1", { duration: 1, y: -50, opacity: 0, ease: "power2.out" });
     gsap.from(".hero-section p", { duration: 1, y: 50, opacity: 0, delay: 0.5, ease: "power2.out" });
   });
-  
