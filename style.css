@@ -1,9 +1,5 @@
-/* style.css */
-
-/* استيراد الخطوط */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
-/* CSS Variables مع تصميم بنفسجي */
 :root {
   --font-primary: 'Cairo', sans-serif;
   --purple-primary: #6a0dad;
@@ -42,7 +38,6 @@ body.dark-theme {
   --shadow-color: rgba(255, 255, 255, 0.1);
 }
 
-/* القواعد العامة */
 body {
   font-family: var(--font-primary);
   background-color: var(--bg-color);
@@ -82,12 +77,10 @@ section {
   padding: 4rem 0;
 }
 
-/* الظلال */
 .shadow-sm { box-shadow: 0 .125rem .25rem var(--shadow-color) !important; }
 .shadow { box-shadow: 0 .5rem 1rem var(--shadow-color) !important; }
 .shadow-lg { box-shadow: 0 1rem 3rem var(--shadow-color) !important; }
 
-/* تخصيص شريط التنقل العلوي */
 .custom-navbar {
   background-color: var(--navbar-bg) !important;
   transition: background-color 0.3s ease;
@@ -116,7 +109,6 @@ section {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28var%28--navbar-text%29, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* قسم البداية (Hero) */
 .hero-section {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -148,7 +140,6 @@ section {
   border: 4px solid var(--border-color);
 }
 
-/* تأثير الكتابة (Typewriter) */
 .typewriter {
   font-size: 1.25rem;
   white-space: nowrap;
@@ -156,7 +147,6 @@ section {
   border-right: 3px solid var(--link-color);
 }
 
-/* البطاقات */
 .card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -188,7 +178,6 @@ section {
   object-fit: cover;
 }
 
-/* النماذج في قسم التواصل */
 #contact .form-control {
   background-color: var(--card-bg);
   color: var(--text-color);
@@ -202,7 +191,6 @@ section {
   box-shadow: 0 0 0 0.25rem rgba(106, 13, 173, 0.25);
 }
 
-/* نظام تقييم النجوم */
 .star-rating i {
   cursor: pointer;
   color: #ccc;
@@ -219,15 +207,12 @@ section {
   color: #ffc107;
 }
 
-/* التذييل (Footer) */
 .custom-footer {
   background-color: var(--footer-bg);
   color: var(--footer-text);
   padding: 2rem 0;
 }
-/* تأثير الكتابة التلقائي لنص قسم "عني" */
 
-/* تعديلات RTL/LTR */
 html[lang="ar"] body { }
 html[lang="en"] body { }
 html[lang="en"] .me-auto { margin-right: 0 !important; margin-left: auto !important; }
@@ -236,7 +221,7 @@ html[lang="en"] .me-1 { margin-right: 0 !important; margin-left: .25rem !importa
 html[lang="en"] .me-2 { margin-right: 0 !important; margin-left: .5rem !important; }
 html[lang="en"] .me-3 { margin-right: 0 !important; margin-left: 1rem !important; }
 :root {
-  --navbar-text: 255, 255, 255; /* قيم RGB بدون opacity */
+  --navbar-text: 255, 255, 255;
 }
 .navbar-toggler-icon {
   background-image: none !important;
