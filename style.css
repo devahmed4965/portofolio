@@ -235,3 +235,13 @@ html[lang="en"] .ms-auto { margin-left: 0 !important; margin-right: auto !import
 html[lang="en"] .me-1 { margin-right: 0 !important; margin-left: .25rem !important; }
 html[lang="en"] .me-2 { margin-right: 0 !important; margin-left: .5rem !important; }
 html[lang="en"] .me-3 { margin-right: 0 !important; margin-left: 1rem !important; }
+:root {
+  --navbar-text: 255, 255, 255; /* قيم RGB بدون opacity */
+}
+.navbar-toggler-icon {
+  background-image: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
