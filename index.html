@@ -20,6 +20,7 @@
   <!-- AOS Animation CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="icon" href="ahmed.png" type="image/x-icon">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -254,7 +255,7 @@ Operation
         <h2 class="text-center mb-5" data-lang-key="contactTitle">تواصل معي</h2>
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form id="contact-form" action="https://formspree.io/f/xdkewwqa" method="POST">
               <div class="mb-3">
                 <label for="name" class="form-label" data-lang-key="contactName">الاسم</label>
                 <input type="text" class="form-control" id="name" name="name" required>
@@ -289,14 +290,21 @@ Operation
             </form>
             <div class="text-center mt-5">
               <p class="fw-bold" data-lang-key="contactOr">أو تواصل مباشرة عبر:</p>
-              <a href="mailto:your-actual-email@example.com" class="text-decoration-none me-3 fs-5" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
-              <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank" class="text-decoration-none me-3 fs-5" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/your-github-username" target="_blank" class="text-decoration-none me-3 fs-5" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="mailto:your-actual-email@example.com" class="text-decoration-none me-3 fs-5" title="البريد الإلكتروني">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank" class="text-decoration-none me-3 fs-5" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/your-github-username" target="_blank" class="text-decoration-none me-3 fs-5" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
   </main>
 
   <!-- الشريط السفلي (Footer) -->
@@ -314,5 +322,35 @@ Operation
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Custom JS -->
   <script src="script.js"></script>
+  <script>
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+  
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = form.action;
+  
+      try {
+        const response = await fetch(action, {
+          method: "POST",
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+  
+        if (response.ok) {
+          status.innerHTML = "✅ تم إرسال رسالتك بنجاح!";
+          form.reset();
+        } else {
+          status.innerHTML = "❌ حدث خطأ أثناء الإرسال. حاول مجددًا.";
+        }
+      } catch (error) {
+        status.innerHTML = "⚠️ لا يمكن الاتصال بالخادم. تحقق من الإنترنت.";
+      }
+    });
+  </script>
+  
 </body>
 </html>
