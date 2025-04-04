@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الملف الشخصي لأحمد مكرم الصعيدي، طالب علوم ومطور ويب وفويس أوفر. استعرض مهاراتي ومشاريعي وخبراتي.">
+  <title>أحمد مكرم الصعيدي - مطور ويب وعالم | Ahmed Makram El-Saeedy</title>
+
+  <!-- Bootstrap CSS (RTL & LTR switched dynamically) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" id="bootstrap-css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <!-- الشريط العلوي -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm custom-navbar" data-aos="fade-down">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">أحمد مكرم الصعيدي</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home" data-lang-key="navHome">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-lang-key="navAbout">عني</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills" data-lang-key="navSkills">مهاراتي</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" data-lang-key="navProjects">مشاريعي</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience" data-lang-key="navExperience">الخبرات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-lang-key="navContact">تواصل معي</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <button id="theme-toggle" class="btn btn-sm me-2" aria-label="تبديل الوضع الداكن/الفاتح">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button id="lang-toggle" class="btn btn-sm btn-outline-secondary" data-lang-target="en">English</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- المحتوى الرئيسي -->
+  <main>
+    <!-- قسم البداية (Hero) مع تأثير كتابة المعلومات تلقائيًا -->
+    <section id="home" class="hero-section d-flex align-items-center justify-content-center" data-aos="fade-up">
+      <div class="container text-center">
+        <img src="ahmed.png" alt="صورة شخصية لـ أحمد مكرم الصعيدي" class="rounded-circle mb-3 shadow" width="150" height="150">
+        <h1 class="display-4 fw-bold" data-lang-key="heroTitle">أحمد مكرم الصعيدي</h1>
+        <p class="lead mb-4 typewriter" id="typewriter"></p>
+        <a href="#projects" class="btn btn-primary btn-lg me-md-2 mb-2 mb-md-0" data-lang-key="heroBtnProjects">شاهد مشاريعي</a>
+        <a href="#contact" class="btn btn-outline-secondary btn-lg" data-lang-key="heroBtnContact">تواصل معي</a>
+      </div>
+    </section>
+
+    <!-- الأقسام الأخرى تبقى كما هي مع بعض تأثيرات AOS -->
+    <section id="about" class="py-5" data-aos="fade-up">
+        <div class="container text-center">
+          <h2 class="mb-5" data-lang-key="aboutTitle">عني</h2>
+          <div class="row justify-content-center">
+            <!-- النسخة العربية -->
+            <div class="col-md-8" data-lang-section="ar">
+              <h3 class="mb-4" data-lang-key="aboutSubtitleAr">مزيج من العلم والتكنولوجيا</h3>
+              <!-- نص الوصف مع تأثير كتابة تلقائي -->
+              <p class="typewriter-about" data-lang-key="aboutDescAr">
+                أنا أحمد مكرم الصعيدي، طالب في الفرقة الثالثة بكلية العلوم بجامعة دمنهور، شغوف بتطوير الويب وتطبيق أحدث التقنيات لإحداث تغيير ملموس.
+              </p>
+              <p class="mt-4" data-lang-key="aboutWorkAr">
+                أعمل في شركة "Aliens Express" وأمارس عمل الفويس أوفر، مما يمنحني خبرة متنوعة ومتكاملة.
+              </p>
+            </div>
+            <!-- النسخة الإنجليزية (تظهر عند التبديل) -->
+            <div class="col-md-8 d-none" data-lang-section="en">
+              <h3 class="mb-4" data-lang-key="aboutSubtitleEn">A Blend of Science and Technology</h3>
+              <p class="typewriter-about" data-lang-key="aboutDescEn">
+                I am Ahmed Makram El-Saeedy, a third-year science student passionate about web development, integrating cutting-edge technology to make a tangible impact.
+              </p>
+              <p class="mt-4" data-lang-key="aboutWorkEn">
+                I work at "Aliens Express" and also pursue voiceover work, giving me diverse and holistic experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- باقي الأقسام تبقى مشابهة مع بعض التأثيرات والأنيميشن -->
+    <section id="skills" class="py-5 bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2 style="color: aliceblue;"  class="text-center mb-5" data-lang-key="skillsTitle">مهاراتي</h2>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm" data-aos="zoom-in">
+              <div class="card-body">
+                <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                <h5 class="card-title fw-bold" data-lang-key="skillsProgTitle">البرمجة والتطوير</h5>
+                <p class="card-text">HTML, CSS, JavaScript, Bootstrap</p>
+                <p class="card-text">Python, Django, Node.js, Express</p>
+                <p class="card-text">SQL (مثل PostgreSQL, MySQL)</p>
+                <p class="card-text">Git, GitHub, Docker</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card-body">
+                <i class="fas fa-flask fa-3x text-success mb-3"></i>
+                <h5 class="card-title fw-bold" data-lang-key="skillsSciTitle">العلوم</h5>
+                <p class="card-text" data-lang-key="skillsSciMicro">الميكروبيولوجي</p>
+                <p class="card-text" data-lang-key="skillsSciChem">الكيمياء</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card-body">
+                <i class="fas fa-microphone-alt fa-3x text-info mb-3"></i>
+                <h5 class="card-title fw-bold" data-lang-key="skillsOtherTitle">مهارات أخرى</h5>
+                <p class="card-text" data-lang-key="skillsOtherVO">التعليق الصوتي</p>
+                <p class="card-text" data-lang-key="skillsOtherCom">التواصل وحل المشكلات</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5" data-lang-key="projectsTitle">مشاريعي</h2>
+        <div class="row">
+          <!-- Project 1: Video -->
+          <div class="col-md-6 col-lg-4 mb-4 project-card" data-aos="flip-left">
+            <article class="card h-100 shadow-sm">
+              <video class="card-img-top" autoplay loop muted playsinline poster="project1.png">
+                <source src="project1.mp4" type="video/mp4">
+                عذراً، المتصفح لا يدعم تشغيل الفيديو.
+              </video>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title" data-lang-key="project1Title">نظام فحص مرتجعات</h5>
+                <p class="card-text flex-grow-1" data-lang-key="project1Desc">
+                  يقدم نظام فحص المرتجعات Shipments Checker تجربة فريدة لشركات الشحن والتوصيل، حيث يمكن تسجيل الشحنات عبر الاسكانر ومراجعة تفاصيل كل شحنة وتاريخ فحصها.
+                </p>
+                <p><small class="text-muted" data-lang-key="projectTechUsed">التقنيات: Django, Python, Bootstrap, PostgreSQL</small></p>
+                <div>
+                  <a href="#" class="btn btn-sm btn-primary me-1" target="_blank" data-lang-key="projectBtnLive">عرض مباشر</a>
+                  <a href="#" class="btn btn-sm btn-secondary" target="_blank" data-lang-key="projectBtnCode"><i class="fab fa-github"></i> الكود</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- Project 2: Video -->
+          <div class="col-md-6 col-lg-4 mb-4 project-card" data-aos="flip-left" data-aos-delay="100">
+            <article class="card h-100 shadow-sm">
+              <video class="card-img-top" autoplay loop muted playsinline poster="project2.png">
+                <source src="project2.mp4" type="video/mp4">
+                عذراً، المتصفح لا يدعم تشغيل الفيديو.
+              </video>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title" data-lang-key="project2Title">اسم المشروع الثاني</h5>
+                <p class="card-text flex-grow-1" data-lang-key="project2Desc">
+                  وصف موجز لمشروع آخر باستخدام تقنيات Node.js.
+                </p>
+                <p><small class="text-muted" data-lang-key="projectTechUsed">التقنيات: Node.js, Express, EJS, CSS, MongoDB</small></p>
+                <div>
+                  <a href="#" class="btn btn-sm btn-primary me-1" target="_blank" data-lang-key="projectBtnLive">عرض مباشر</a>
+                  <a href="#" class="btn btn-sm btn-secondary" target="_blank" data-lang-key="projectBtnCode"><i class="fab fa-github"></i> الكود</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- Project 3: Video -->
+          <div class="col-md-6 col-lg-4 mb-4 project-card" data-aos="flip-left" data-aos-delay="200">
+            <article class="card h-100 shadow-sm">
+              <video class="card-img-top" autoplay loop muted playsinline poster="project3.png">
+                <source src="project3.mp4" type="video/mp4">
+                عذراً، المتصفح لا يدعم تشغيل الفيديو.
+              </video>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title" data-lang-key="project3Title">اسم المشروع الثالث</h5>
+                <p class="card-text flex-grow-1" data-lang-key="project3Desc">
+                  مشروع واجهة أمامية بسيط باستخدام HTML, CSS, JavaScript.
+                </p>
+                <p><small class="text-muted" data-lang-key="projectTechUsed">التقنيات: HTML, CSS, JavaScript</small></p>
+                <div>
+                  <a href="#" class="btn btn-sm btn-primary me-1" target="_blank" data-lang-key="projectBtnLive">عرض مباشر</a>
+                  <a href="#" class="btn btn-sm btn-secondary" target="_blank" data-lang-key="projectBtnCode"><i class="fab fa-github"></i> الكود</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="experience" class="py-5 bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2 style="color: aliceblue;"  class="text-center mb-5" data-lang-key="experienceTitle">الخبرات والاعتمادات</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h3 style="color: aliceblue;"  class="mb-4" data-lang-key="experienceWorkTitle">الخبرة العملية</h3>
+            <div class="mb-4">
+              <strong style="color: aliceblue;"  data-lang-key="experienceAlienExp"><i class="fas fa-briefcase me-2"></i>شركة Aliens Express</strong>
+              <p  style="color: aliceblue;"  class="mt-2" data-lang-key="experienceAlienDesc">
+Operation
+
+              </p>
+            </div>
+            <div>
+              <strong style="color: aliceblue;"  data-lang-key="experienceVOTitle"><i class="fas fa-microphone-alt me-2"></i>التعليق الصوتي (Voiceover)</strong>
+              <p style="color: aliceblue;"  class="mt-2" data-lang-key="experienceVODesc">
+بودكاست اسرار الكون والإيمان              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 style="color: aliceblue;"  class="mb-4" data-lang-key="experienceTrustTitle">الثقة والاعتمادات</h3>
+          
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
+              <img src="logo2.png" alt="شعار شركة 1" class="img-thumbnail m-2" style="height: 60px; width: auto;">
+              <img src="logo3.png" alt="شعار جهة اعتماد 2" class="img-thumbnail m-2" style="height: 60px; width: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5" data-lang-key="contactTitle">تواصل معي</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label" data-lang-key="contactName">الاسم</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label" data-lang-key="contactEmail">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" name="_replyto" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label" data-lang-key="contactSubject">الموضوع</label>
+                <input type="text" class="form-control" id="subject" name="subject">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label" data-lang-key="contactMessage">الرسالة / الرأي</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="mb-4">
+                <label class="form-label d-block" data-lang-key="contactRating">تقييمك للموقع (اختياري):</label>
+                <div class="star-rating">
+                  <i class="far fa-star" data-value="1" aria-label="نجمة واحدة"></i>
+                  <i class="far fa-star" data-value="2" aria-label="نجمتان"></i>
+                  <i class="far fa-star" data-value="3" aria-label="ثلاث نجمات"></i>
+                  <i class="far fa-star" data-value="4" aria-label="أربع نجمات"></i>
+                  <i class="far fa-star" data-value="5" aria-label="خمس نجمات"></i>
+                  <input type="hidden" name="rating" id="rating-value">
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg" data-lang-key="contactBtnSend">إرسال الرسالة</button>
+              </div>
+              <p id="form-status" class="mt-3 text-center"></p>
+            </form>
+            <div class="text-center mt-5">
+              <p class="fw-bold" data-lang-key="contactOr">أو تواصل مباشرة عبر:</p>
+              <a href="mailto:your-actual-email@example.com" class="text-decoration-none me-3 fs-5" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank" class="text-decoration-none me-3 fs-5" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/your-github-username" target="_blank" class="text-decoration-none me-3 fs-5" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- الشريط السفلي (Footer) -->
+  <footer class="py-4 custom-footer" data-aos="fade-up">
+    <div class="container text-center">
+      <p class="mb-0" data-lang-key="footerText">&copy; 2025 أحمد مكرم الصعيدي. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
